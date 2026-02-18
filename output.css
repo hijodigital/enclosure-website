@@ -262,6 +262,9 @@
   .bg-background {
     background-color: var(--color-background);
   }
+  .bg-\[linear-gradient\(to_bottom\,\#000913\,\#54c0eb_50vh\,\#282b20_50vh\,\#131319_100vh\)\] {
+    background-image: linear-gradient(to bottom,#000913,#54c0eb 50vh,#282b20 50vh,#131319 100vh);
+  }
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
   }
