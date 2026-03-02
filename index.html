@@ -5,26 +5,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <link rel="stylesheet" href="output.css" />
-    <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
     <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
     <link rel="shortcut icon" href="/favicon/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon/apple-touch-icon.png"
+    />
     <link rel="manifest" href="/favicon/site.webmanifest" />
   </head>
-  <body
-    class="bg-[linear-gradient(to_bottom,#000913,#54c0eb_50vh,#282b20_50vh,#131319_100vh)] text-text relative container mx-auto flex min-h-dvh items-center justify-center px-5"
-  >
-    <div class="text-center">
-      <h1 class="font-morris text-3xl">Enclosure</h1>
-      coming soon
-    </div>
+  <body class="bg-background font-nunito text-text">
+    <div
+      class="absolute inset-0 -z-10 min-h-[150vh] bg-[linear-gradient(to_bottom,transparent_100vh,var(--color-background)_150vh),url('/images/bg.webp'),linear-gradient(to_bottom,#000913,#54c0eb_50vh)] bg-[size:auto,cover,auto] bg-top bg-no-repeat"
+    ></div>
+    <header class="flex h-[85vh] flex-col items-center">
+      <div class="mt-[15vh] text-center">
+        <h1 class="font-morris text-3xl">Enclosure</h1>
+        coming soon
+      </div>
+      <div
+        class="mt-auto flex flex-col items-center justify-center gap-9 md:flex-row md:gap-12"
+      >
+        <a class="cursor-not-allowed" href="/">
+          <img
+            class="h-12 w-auto md:h-16"
+            src="badges/app-store-pre-order.svg"
+            alt="Pre-order on the App Store"
+          />
+        </a>
+        <a class="cursor-not-allowed" href="/">
+          <img
+            class="h-12 w-auto md:h-16"
+            src="badges/play-store-pre-register.png"
+            alt="Pre-register on Google Play"
+          />
+        </a>
+      </div>
+    </header>
+    <main class="mt-[15vh]">
+      <div class="container mx-auto max-w-[768px] px-5 text-center">
+        <div class="font-morris bar my-8 text-3xl">
+          <div class="leading-10 md:leading-15">Wiltshire, England</div>
+          <div>1749</div>
+        </div>
+        <p class="mb-8 text-lg leading-8 md:leading-10">
+          Rural England is in the grip of change and growing discontent as
+          individual ownership replaces common rights to land.
+        </p>
+        <p class="mb-8 text-lg leading-8 md:leading-10">
+          When a local man is found dead near the village of Bradley, it appears
+          to be a simple case of a poacher killed by a gamekeeper’s deadly trap.
+          Yet all is not what it seems—at least not to Elias, the dead man’s
+          ten-year-old son.
+        </p>
+        <p class="mb-8 text-lg leading-8 md:leading-10">
+          In this strategy card game, you are Elias. To uncover the truth, you
+          must investigate the mystery, heed the warnings of the wild, and
+          navigate dangerous situations, all while avoiding the watchful eyes of
+          the local elite.
+        </p>
+      </div>
+      <div
+        class="scrollbar-thin scrollbar-track-transparent scrollbar-thumb-gray-600/50 scrollbar-thumb-rounded-full scrollbar-track-rounded-full cards overflow-x-auto py-4"
+      >
+        <div class="mx-auto flex w-fit items-center gap-4 px-4">
+          <img class="h-40 rotate-[2deg] md:h-56" src="images/9.webp" alt="" />
+          <img
+            class="relative top-1 h-40 rotate-[-1deg] md:h-56"
+            src="images/james-huntley.webp"
+            alt=""
+          />
+          <img
+            class="relative bottom-1 h-40 md:h-56"
+            src="images/withy-wood.webp"
+            alt=""
+          />
+          <img class="h-12" src="images/die.webp" alt="" />
+          <img
+            class="h-40 rotate-[1deg] md:h-56"
+            src="images/elias-attwood.webp"
+            alt=""
+          />
+          <img
+            class="relative bottom-1.5 left-1 h-40 rotate-[-1deg] md:h-56"
+            src="images/full-moon.webp"
+            alt=""
+          />
+          <img class="h-40 md:h-56" src="images/half-penny.webp" alt="" />
+        </div>
+      </div>
+    </main>
     <footer
-      class="absolute bottom-10 container mx-auto grid max-w-[768px] items-center gap-5 px-5 text-center md:bottom-20 md:grid-cols-3 md:justify-between"
+      class="container mx-auto my-24 grid max-w-[768px] items-center gap-5 px-5 text-center md:my-32 md:grid-cols-3 md:justify-between"
     >
       <a class="md:text-left" href="/privacy-policy.html">Privacy policy</a>
       <a href="/eula.html">End-user licence agreement</a>
       <a class="md:text-right" href="/support.html">Support</a>
     </footer>
+    <script>
+      window.addEventListener("load", () => {
+        const cards = document.querySelector(".cards");
+        cards.scrollLeft = (cards.scrollWidth - cards.clientWidth) / 2;
+      });
+    </script>
   </body>
 </html>
 <!-- npx tailwindcss -i ./input.css -o ./output.css --watch -->
