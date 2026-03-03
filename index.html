@@ -64,40 +64,153 @@
           Yet all is not what it seems—at least not to Elias, the dead man’s
           ten-year-old son.
         </p>
-        <p class="mb-8 text-lg leading-8 md:leading-10">
+        <p class="mb-22 text-lg leading-8 md:mb-30 md:leading-10">
           In this strategy card game, you are Elias. To uncover the truth, you
           must investigate the mystery, heed the warnings of the wild, and
           navigate dangerous situations, all while avoiding the watchful eyes of
           the local elite.
         </p>
       </div>
-      <div
-        class="scrollbar-thin scrollbar-track-transparent scrollbar-thumb-gray-600/50 scrollbar-thumb-rounded-full scrollbar-track-rounded-full cards overflow-x-auto py-4"
-      >
-        <div class="mx-auto flex w-fit items-center gap-4 px-4">
-          <img class="h-40 rotate-[2deg] md:h-56" src="images/9.webp" alt="" />
+      <div class="carousel">
+        <div class="card">
           <img
-            class="relative top-1 h-40 rotate-[-1deg] md:h-56"
-            src="images/james-huntley.webp"
+            class="front h-48 md:h-64"
+            src="images/full-moon/front.webp"
             alt=""
           />
           <img
-            class="relative bottom-1 h-40 md:h-56"
-            src="images/withy-wood.webp"
+            class="back hidden h-48 md:h-64"
+            src="images/full-moon/back.webp"
             alt=""
           />
-          <img class="h-12" src="images/die.webp" alt="" />
+        </div>
+        <div class="card">
           <img
-            class="h-40 rotate-[1deg] md:h-56"
-            src="images/elias-attwood.webp"
+            class="front h-48 md:h-64"
+            src="images/robert-bailey/front.webp"
             alt=""
           />
           <img
-            class="relative bottom-1.5 left-1 h-40 rotate-[-1deg] md:h-56"
-            src="images/full-moon.webp"
+            class="back hidden h-48 md:h-64"
+            src="images/robert-bailey/back.webp"
             alt=""
           />
-          <img class="h-40 md:h-56" src="images/half-penny.webp" alt="" />
+        </div>
+        <div class="card">
+          <img
+            class="front h-48 md:h-64"
+            src="images/old-bridge/front.webp"
+            alt=""
+          />
+          <img
+            class="back hidden h-48 md:h-64"
+            src="images/old-bridge/back.webp"
+            alt=""
+          />
+        </div>
+        <div class="card">
+          <img
+            class="front h-48 md:h-64"
+            src="images/flycatcher/front.webp"
+            alt=""
+          />
+          <img
+            class="back hidden h-48 md:h-64"
+            src="images/flycatcher/back.webp"
+            alt=""
+          />
+        </div>
+        <div class="card">
+          <img class="front h-48 md:h-64" src="images/11/front.webp" alt="" />
+          <img
+            class="back hidden h-48 md:h-64"
+            src="images/11/back.webp"
+            alt=""
+          />
+        </div>
+        <div class="card">
+          <img class="front h-48 md:h-64" src="images/10/front.webp" alt="" />
+          <img
+            class="back hidden h-48 md:h-64"
+            src="images/10/back.webp"
+            alt=""
+          />
+        </div>
+        <div class="card">
+          <img class="front h-48 md:h-64" src="images/9/front.webp" alt="" />
+          <img
+            class="back hidden h-48 md:h-64"
+            src="images/9/back.webp"
+            alt=""
+          />
+        </div>
+        <div class="card">
+          <img
+            class="front h-48 md:h-64"
+            src="images/the-higgler/front.webp"
+            alt=""
+          />
+          <img
+            class="back hidden h-48 md:h-64"
+            src="images/the-higgler/back.webp"
+            alt=""
+          />
+        </div>
+        <div class="card">
+          <img
+            class="front h-48 md:h-64"
+            src="images/spring-gun/front.webp"
+            alt=""
+          />
+          <img
+            class="back hidden h-48 md:h-64"
+            src="images/spring-gun/back.webp"
+            alt=""
+          />
+        </div>
+        <div class="card">
+          <img
+            class="front h-48 md:h-64"
+            src="images/game-laws/front.webp"
+            alt=""
+          />
+          <img
+            class="back hidden h-48 md:h-64"
+            src="images/game-laws/back.webp"
+            alt=""
+          />
+        </div>
+        <div class="card">
+          <img
+            class="front h-48 md:h-64"
+            src="images/red-deer/front.webp"
+            alt=""
+          />
+          <img
+            class="back hidden h-48 md:h-64"
+            src="images/red-deer/back.webp"
+            alt=""
+          />
+        </div>
+        <div class="card">
+          <img
+            class="front h-48 md:h-64"
+            src="images/two-pigeons/front.webp"
+            alt=""
+          />
+          <img
+            class="back hidden h-48 md:h-64"
+            src="images/two-pigeons/back.webp"
+            alt=""
+          />
+        </div>
+        <div class="card">
+          <img class="front h-48 md:h-64" src="images/hare/front.webp" alt="" />
+          <img
+            class="back hidden h-48 md:h-64"
+            src="images/hare/back.webp"
+            alt=""
+          />
         </div>
       </div>
     </main>
@@ -108,12 +221,8 @@
       <a href="/eula.html">End-user licence agreement</a>
       <a class="md:text-right" href="/support.html">Support</a>
     </footer>
-    <script>
-      window.addEventListener("load", () => {
-        const cards = document.querySelector(".cards");
-        cards.scrollLeft = (cards.scrollWidth - cards.clientWidth) / 2;
-      });
-    </script>
+    <script src="node_modules/gsap/dist/gsap.min.js"></script>
+    <script src="carousel.js"></script>
   </body>
 </html>
 <!-- npx tailwindcss -i ./input.css -o ./output.css --watch -->
