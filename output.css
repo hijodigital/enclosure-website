@@ -262,11 +262,17 @@
   .h-\[85vh\] {
     height: 85vh;
   }
+  .h-full {
+    height: 100%;
+  }
   .min-h-\[150vh\] {
     min-height: 150vh;
   }
   .w-auto {
     width: auto;
+  }
+  .w-full {
+    width: 100%;
   }
   .max-w-\[768px\] {
     max-width: 768px;
@@ -329,8 +335,14 @@
   .bg-background {
     background-color: var(--color-background);
   }
+  .bg-\[linear-gradient\(to_bottom\,\#000913\,\#54c0eb_50vh\)\] {
+    background-image: linear-gradient(to bottom,#000913,#54c0eb 50vh);
+  }
   .bg-\[linear-gradient\(to_bottom\,transparent_100vh\,var\(--color-background\)_150vh\)\,url\(\'\/images\/bg\.webp\'\)\,linear-gradient\(to_bottom\,\#000913\,\#54c0eb_50vh\)\] {
     background-image: linear-gradient(to bottom,transparent 100vh,var(--color-background) 150vh),url('/images/bg.webp'),linear-gradient(to bottom,#000913,#54c0eb 50vh);
+  }
+  .bg-\[linear-gradient\(to_bottom\,transparent_100vh\,var\(--color-background\)_150vh\)\] {
+    background-image: linear-gradient(to bottom,transparent 100vh,var(--color-background) 150vh);
   }
   .bg-\[size\:auto\,cover\,auto\] {
     background-size: auto,cover,auto;
@@ -340,6 +352,12 @@
   }
   .bg-no-repeat {
     background-repeat: no-repeat;
+  }
+  .object-cover {
+    object-fit: cover;
+  }
+  .object-top {
+    object-position: top;
   }
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
