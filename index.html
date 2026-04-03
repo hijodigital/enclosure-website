@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="overflow-x-hidden">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,7 +20,7 @@
     />
     <link rel="manifest" href="/favicon/site.webmanifest" />
   </head>
-  <body class="bg-background font-nunito text-text">
+  <body class="bg-background font-nunito text-text overflow-x-hidden">
     <div
       class="absolute inset-0 -z-10 min-h-[150vh] bg-[linear-gradient(to_bottom,transparent_100vh,var(--color-background)_150vh),url('/images/bg.webp'),linear-gradient(to_bottom,#000913,#54c0eb_50vh)] bg-[size:auto,cover,auto] bg-top bg-no-repeat"
     ></div>
@@ -48,8 +48,8 @@
         </a>
       </div>
     </header>
-    <main class="mt-[15vh]">
-      <div class="container mx-auto max-w-[768px] px-5 text-center">
+    <main class="container mx-auto mt-[15vh] max-w-[768px] px-5">
+      <div class="text-center">
         <div class="font-morris bar my-8 text-3xl">
           <div class="leading-10 md:leading-15">Wiltshire, England</div>
           <div>1749</div>
@@ -71,148 +71,11 @@
           the local elite.
         </p>
       </div>
-      <div class="carousel">
-        <div class="card">
-          <img
-            class="front h-48 md:h-64"
-            src="images/full-moon/front.webp"
-            alt=""
-          />
-          <img
-            class="back hidden h-48 md:h-64"
-            src="images/full-moon/back.webp"
-            alt=""
-          />
-        </div>
-        <div class="card">
-          <img
-            class="front h-48 md:h-64"
-            src="images/robert-bailey/front.webp"
-            alt=""
-          />
-          <img
-            class="back hidden h-48 md:h-64"
-            src="images/robert-bailey/back.webp"
-            alt=""
-          />
-        </div>
-        <div class="card">
-          <img
-            class="front h-48 md:h-64"
-            src="images/old-bridge/front.webp"
-            alt=""
-          />
-          <img
-            class="back hidden h-48 md:h-64"
-            src="images/old-bridge/back.webp"
-            alt=""
-          />
-        </div>
-        <div class="card">
-          <img
-            class="front h-48 md:h-64"
-            src="images/flycatcher/front.webp"
-            alt=""
-          />
-          <img
-            class="back hidden h-48 md:h-64"
-            src="images/flycatcher/back.webp"
-            alt=""
-          />
-        </div>
-        <div class="card">
-          <img class="front h-48 md:h-64" src="images/11/front.webp" alt="" />
-          <img
-            class="back hidden h-48 md:h-64"
-            src="images/11/back.webp"
-            alt=""
-          />
-        </div>
-        <div class="card">
-          <img class="front h-48 md:h-64" src="images/10/front.webp" alt="" />
-          <img
-            class="back hidden h-48 md:h-64"
-            src="images/10/back.webp"
-            alt=""
-          />
-        </div>
-        <div class="card">
-          <img class="front h-48 md:h-64" src="images/9/front.webp" alt="" />
-          <img
-            class="back hidden h-48 md:h-64"
-            src="images/9/back.webp"
-            alt=""
-          />
-        </div>
-        <div class="card">
-          <img
-            class="front h-48 md:h-64"
-            src="images/the-higgler/front.webp"
-            alt=""
-          />
-          <img
-            class="back hidden h-48 md:h-64"
-            src="images/the-higgler/back.webp"
-            alt=""
-          />
-        </div>
-        <div class="card">
-          <img
-            class="front h-48 md:h-64"
-            src="images/spring-gun/front.webp"
-            alt=""
-          />
-          <img
-            class="back hidden h-48 md:h-64"
-            src="images/spring-gun/back.webp"
-            alt=""
-          />
-        </div>
-        <div class="card">
-          <img
-            class="front h-48 md:h-64"
-            src="images/game-laws/front.webp"
-            alt=""
-          />
-          <img
-            class="back hidden h-48 md:h-64"
-            src="images/game-laws/back.webp"
-            alt=""
-          />
-        </div>
-        <div class="card">
-          <img
-            class="front h-48 md:h-64"
-            src="images/red-deer/front.webp"
-            alt=""
-          />
-          <img
-            class="back hidden h-48 md:h-64"
-            src="images/red-deer/back.webp"
-            alt=""
-          />
-        </div>
-        <div class="card">
-          <img
-            class="front h-48 md:h-64"
-            src="images/two-pigeons/front.webp"
-            alt=""
-          />
-          <img
-            class="back hidden h-48 md:h-64"
-            src="images/two-pigeons/back.webp"
-            alt=""
-          />
-        </div>
-        <div class="card">
-          <img class="front h-48 md:h-64" src="images/hare/front.webp" alt="" />
-          <img
-            class="back hidden h-48 md:h-64"
-            src="images/hare/back.webp"
-            alt=""
-          />
-        </div>
-      </div>
+      <img
+        class="relative left-1/2 min-w-2xl -translate-x-1/2"
+        src="images/screenshots.webp"
+        alt="screenshots"
+      />
     </main>
     <footer
       class="container mx-auto my-24 grid max-w-[768px] items-center gap-5 px-5 text-center md:my-32 md:grid-cols-3 md:justify-between"
@@ -221,8 +84,6 @@
       <a href="/eula.html">End-user licence agreement</a>
       <a class="md:text-right" href="/support.html">Support</a>
     </footer>
-    <script src="scripts/gsap.min.js"></script>
-    <script src="carousel.js"></script>
   </body>
 </html>
 <!-- npx tailwindcss -i ./input.css -o ./output.css --watch -->
